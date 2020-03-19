@@ -9,7 +9,7 @@ def main():
 
     current_date = str(date.today())
 
-    data_frame.to_csv(f"./data/{current_date}.csv", header=["Station", "Wetter", "Temperatur", "Windgeschwindigkeit"], index = False)
+    data_frame.to_csv(f"./data/{current_date}.csv", header=["Station", "Wetter", "Temperatur", "Windgeschwindigkeit"], index = False, encoding = 'utf8')
 
 
 

@@ -10,7 +10,7 @@ def main():
     while(repeat):
         current_hour = time.hour
 
-        if current_hour == 14:
+        if current_hour >= 14:
             try:
                 scrape()
                 repeat = False

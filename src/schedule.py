@@ -5,9 +5,9 @@ from weatherscraper import main as scrape
 def main():
     print("Scheduling Scan")
     repeat = True
-    time = datetime.now()
 
     while(repeat):
+        time = datetime.now()
         current_hour = time.hour
 
         if current_hour >= 14:

@@ -1,0 +1,22 @@
+{
+  "groups":{
+    "#cc3333":{
+      "div":"#box0",
+      "label":"",
+      "paths":[
+        "Ludwigslust-Parchim","Mecklenburgische_Seenplatte","Ostprignitz-Ruppin","Prignitz"
+      ]
+    },
+    "#92c5de":{
+      "div":"#box1",
+      "label":"",
+      "paths":[
+        "Garmisch-Partenkirchen","Miesbach","Rosenheim_City","Bad_Tölz-Wolfratshausen","Rosenheim","Berchtesgadener_Land","Traunstein"
+      ]
+    }
+  },
+  "title":"",
+  "hidden":[],
+  "background":"#ffffff",
+  "borders":"#000000"
+}

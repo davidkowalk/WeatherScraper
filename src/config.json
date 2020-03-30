@@ -3,7 +3,7 @@
     "Arkona":["Vorpommern-Rügen"],
     "Bremen-Flughafen":["Bremen","Osterholz","Verden","Diepholz","Delmenhorst","Oldenburg","Oldenburg_City"],
     "Cuxhaven":["Cuxhaven","Bremerhaven","Stade","Rotenburg","Wesermarsch"],
-    "Emden-Flughafen":["Emden"],
+    "Emden-Flughafen":["Emden","Leer"],
     "Greifswald":["Vorpommern-Greifswald"],
     "Hamburg-Fuhlsbüttel":["Hamburg","Pinneberg","Segeberg","Stormarn","Lübeck","Herzogtum_Lauenburg","Steinburg","Harburg","Lüneburg"],
     "Hannover-Langenhagen":["Region_Hannover","Heidekreis","Celle","Gifhorn","Peine","Hildesheim","Hameln-Pyrmont","Schaumburg","Nienburg","Uelzen","Altmarkkreis_Salzwedel","Holzminden","Wolfenbüttel","Salzgitter","Braunschweig","Wolfsburg","Helmstedt"],
@@ -11,7 +11,7 @@
     "Kiel-Holtenau":["Kiel","Plön","Rendsburg-Eckernförde","Neumünster"],
     "List auf Sylt":["Nordfriesland","Dithmarschen"],
     "Marnitz":["Ludwigslust-Parchim","Lüchow-Dannenberg"],
-    "Norderney":["Aurich","Wittmund","Friesland","Wilhelmshaven","Leer"],
+    "Norderney":["Aurich","Wittmund","Friesland","Wilhelmshaven"],
     "Rostock-Warnemünde":["Rostock_City","Rostock"],
     "Schleswig":["Schleswig-Flensburg","Flensburg"],
     "Schwerin":["Schwerin", "Nordwestmecklenburg"],
@@ -38,12 +38,12 @@
     "Fürstenzell":["Passau","Passau_City", "Freyung-Grafenau", "Deggendorf", "Dingolfing-Landau", "Rottal-Inn", "Altötting", "Mühldorf", "Landshut", "Landshut_City"],
     "Grosser Arber":["Regen", "Cham"],
     "Hof Hohensaas":["Hof","Hof_City", "Saale-Orla-Kreis", "Kronach", "Kulmbach","Wunsiedel", "Bayreuth", "Bayreuth_City", "Sonneberg"],
-    "Hohenpeissenberg":["Weilheim-Schongau"],
+    "Hohenpeissenberg":["Weilheim-Schongau","Garmisch-Partenkirchen", "Bad_Tölz-Wolfratshausen", "Miesbach"],
     "Kempten":["Kempten","Ravensburg","Lindau","Ostallgäu","Kaufbeuren","Unterallgäu","Memmingen"],
     "Konstanz":["Konstanz","Tuttlingen","Sigmaringen","Bodenseekreis","Zollernalbkreis","Biberach"],
     "Lahr":["Ortenaukreis", "Rastatt", "Baden-Baden"],
     "Mannheim":["Mannheim", "Heidelberg", "Bergstraße", "Ludwigshafen_am_Rhein", "Frankenthal", "Worms", "Odenwaldkreis", "Alzey-Worms", "Bad_Dürkheim", "Darmstadt-Dieburg", "Darmstadt", "Groß-Gerau", "Donnersbergkreis"],
-    "München-Flughafen":["München","Munich_City", "Traunstein", "Rosenheim", "Rosenheim_City", "Ebersberg", "Miesbach", "Bad_Tölz-Wolfratshausen", "Starnberg", "Fürstenfeldbruck", "Dachau", "Freising", "Erding", "Landsberg_am_Lech", "PfaffenHof"],
+    "München-Flughafen":["München","Munich_City", "Traunstein", "Rosenheim", "Rosenheim_City", "Ebersberg", "Starnberg", "Fürstenfeldbruck", "Dachau", "Freising", "Erding", "Landsberg_am_Lech", "PfaffenHof","Berchtesgadener_Land"],
     "Nürnberg-Flughafen":["Nürnberger_Land","Nürnberg"],
     "Oberstdorf":["Oberallgäu"],
     "Oehringen":["Hohenlohekreis", "Main-Tauber-Kreis", "Neckar-Odenwald-Kreis", "Schwäbisch_Hall", "Heilbronn", "Heilbronn_City", "Ostalbkreis"],
@@ -53,7 +53,7 @@
     "Stuttgart-Echterdingen":["Stuttgart", "Ludwigsburg", "Rems-Murr-Kreis", "Esslingen", "Göppingen", "Böblingen", "Alb-Donau-Kreis", "Reutlingen"],
     "Weiden":["Weiden_in_der_Oberpfalz", "Neustadt_an_der_Waldnaab","Tirschenreuth", "Amberg-Sulzbach", "Amberg", "Schwandorf"],
     "Würzburg":["Würzburg","Würzburg_City", "Main-Spessart", "Kitzingen", "Neustadt_an_der_Aisch_Bad_Windsheim", "Bad_Kissingen", "Schweinfurt", "Schweinfurt_City", "Rhön-Grabfeld", "Ansbach", "Ansbach_City", "Main-Kinzig-Kreis", "Aschaffenburg", "Aschaffenburg_City", "Miltenberg"],
-    "Zugspitze":["Garmisch-Partenkirchen", "Berchtesgadener_Land"],
+    "Zugspitze":[],
     "Aachen":["Städteregion_Aachen", "Düren", "Heinsberg", "Mönchengladbach", "Viersen"],
     "Bad Lippspringe":["Paderborn","Soest","Höxter"],
     "Düsseldorf-Flughafen":["Düsseldorf", "Rhein-Kreis_Neuss", "Mettmann", "Solingen", "Wuppertal", "Krefeld", "Duisburg", "Mülheim_an_der_Ruhr", "Essen", "Ennepe-Ruhr-Kreis", "Hagen", "Wesel", "Oberhausen", "Bottrop", "Gelsenkirchen", "Bochum", "Herne", "Recklinghausen", "Kleve", "Dortmund", "Unna"],
@@ -69,5 +69,9 @@
     "Saarbrücken/Ensheim":["Regionalverband_Saarbrücken", "Südwestpfalz", "Pirmasens", "Zweibrücken", "Saarpfalz-Kreis", "Neunkirchen", "Saarlouis", "Kaiserslautern", "Kaiserslautern_City", "Kusel"],
     "Trier-Petrisberg":["Trier-Saarburg","Trier", "Merzig-Wadern", "St__Wendel", "Eifelkreis_Bitburg-Prüm", "Bernkastel-Wittlich", "Birkenfeld"],
     "Wasserkuppe":["Fulda"]
-  }
+  },
+  "ignore": [
+    "Zugspitze",
+    "Helgoland"
+  ]
 }

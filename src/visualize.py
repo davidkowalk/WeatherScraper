@@ -4,6 +4,8 @@ import colorsys
 
 def main():
 
+    global config
+
     path = input("Path: ")
     config = get_config()
     station_mapping = config["stations"]
@@ -25,14 +27,13 @@ def generate_vis(station_mapping, data): #Generate the configuartion-file for ma
     vis = {
         "title":"Temperature in Germany",
         "hidden":[],
-        "background":"#505050",
+        "background":"#21252B",
         "borders":"#ffffff"
     }
 
     groups = {}
 
-    tempereatures = data["Temperatur"]
-    min_temp, max_temp = get_extremes(tempereatures)
+    min_temp, max_temp = get_extremes(data)
 
 
 
@@ -69,15 +70,19 @@ def generate_vis(station_mapping, data): #Generate the configuartion-file for ma
     return vis
 
 
-def get_extremes(temps):
-    lowest = temps[0]
-    highest = temps[0]
+def get_extremes(data):
+    lowest = data.at[0, "Temperatur"]
+    highest = data.at[0, "Temperatur"]
 
-    for temperature in temps:
-        if temperature < lowest:
-            lowest = temperature
-        elif temperature > highest:
-            highest = temperature
+    for i, row in data.iterrows():
+
+        if row["Station"] in config["ignore"]:
+            continue
+
+        if row["Temperatur"] < lowest:
+            lowest = row["Temperatur"]
+        elif row["Temperatur"] > highest:
+            highest = row["Temperatur"]
 
     return (lowest, highest)
 

@@ -34,6 +34,7 @@ def generate_vis(station_mapping, data): #Generate the configuartion-file for ma
     groups = {}
 
     min_temp, max_temp = get_extremes(data)
+    print(min_temp, max_temp)
 
 
 

@@ -1,24 +1,10 @@
 from pandas import read_csv
 from pandas import read_csv
 from pandas import DataFrame
+from json import loads
 
 def main():
-    file_names = [
-        "2020-03-19-13-40.csv",
-        "2020-03-20-13-41.csv",
-        "2020-03-21-13-22.csv",
-        "2020-03-22-17-15.csv",
-        "2020-03-23-17-4.csv",
-        "2020-03-24-15-51.csv",
-        "2020-03-25-14-5.csv",
-        "2020-03-25-14-10.csv",
-        "2020-03-26-15-37.csv",
-        "2020-03-27-14-11.csv",
-        "2020-03-28-14-4.csv",
-        "2020-03-29-14-2.csv",
-        "2020-03-30-15-11.csv",
-        "2020-03-31-14-3.csv"
-    ]
+    file_names = get_files()["march"]
 
     files = []
 
@@ -50,6 +36,10 @@ def main():
         avg_temp.at[i, "Temperatur"] /= length
 
     avg_temp.to_csv("./averages/march.csv", index=False)
+
+
+def get_files():
+    return loads(open("./data/files.json").read())
 
 
 if __name__ == '__main__':

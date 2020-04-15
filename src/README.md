@@ -10,3 +10,12 @@
 | schedule.py       | Waits for 14:00 System Time and then downloads the data.
 | visualize.py      | Generated map files  from ``./averages``
 | config.json       | Config file for visualize.py
+
+Run the scraper with
+```bash
+python weatherscraper.py
+```
+or schedule the Scan for 14:00 system time with
+```bash
+python schedule.py
+```

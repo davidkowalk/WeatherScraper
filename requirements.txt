@@ -1,0 +1,3 @@
+urllib >= 1.25.3
+bs4
+pandas

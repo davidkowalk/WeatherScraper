@@ -4,7 +4,10 @@ from pandas import DataFrame
 from json import loads
 
 def main():
-    file_names = get_files()["march"]
+
+    month = "april"
+
+    file_names = get_files()[month]
 
     files = []
 
@@ -35,7 +38,7 @@ def main():
     for i in range(len(avg_temp)):
         avg_temp.at[i, "Temperatur"] /= length
 
-    avg_temp.to_csv("./averages/march.csv", index=False)
+    avg_temp.to_csv(f"./averages/{month}.csv", index=False)
 
 
 def get_files():

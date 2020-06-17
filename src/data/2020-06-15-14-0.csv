@@ -1,0 +1,70 @@
+Station,Wetter,Temperatur,Windgeschwindigkeit
+Arkona,Wolkenlos,17.0,16.2
+Bremen-Flughafen,Niederschlag,22.4,3.96
+Cuxhaven,Wolkenlos,21.4,22.32
+Emden-Flughafen,Bedeckt,18.1,10.44
+Greifswald,Wolkenlos,18.4,15.84
+Hamburg-Fuhlsbüttel,Leicht Bewölkt,21.8,13.32
+Hannover-Langenhagen,Stark Bewölkt,19.9,13.32
+Helgoland,Wolkenlos,18.5,11.16
+Kiel-Holtenau,Wolkenlos,20.2,19.8
+List auf Sylt,Wolkenlos,22.4,21.6
+Marnitz,Wolkenlos,23.3,10.08
+Norderney,Stark Bewölkt,17.6,20.16
+Rostock-Warnemünde,Niederschlag,16.2,28.44
+Schleswig,Wolkenlos,20.5,14.04
+Schwerin,Wolkenlos,22.2,12.6
+Westermarkelsdorf,Wolkenlos,20.5,18.36
+Angermünde,Wolkenlos,23.4,11.16
+Berlin-Tegel,Leicht Bewölkt,23.2,13.32
+Brocken,Stark Bewölkt,13.3,15.84
+Cottbus,Stark Bewölkt,22.6,15.48
+Dresden-Klotzsche,Wolkig,22.9,5.76
+Erfurt-Bindersleben,Bedeckt,18.0,23.4
+Fichtelberg,Wolkig,16.0,12.24
+Gera-Leumnitz,Wolkig,23.7,12.6
+Görlitz,Wolkig,23.1,8.279999
+Leipzig-Schkeuditz,Wolkenlos,24.6,6.84
+Lindenberg,Wolkig,22.4,6.84
+Magdeburg,Wolkig,24.9,7.2
+Meiningen,Leichter Sprühregen,14.8,17.28
+Neuruppin-Alt Ruppin,Wolkenlos,23.0,12.24
+Potsdam,Leicht Bewölkt,25.0,11.88
+Augsburg-Mühlhausen,Leichter Regen,14.7,19.8
+Bamberg,Sprühregen,15.6,8.279999
+Feldberg/Schwarzwald,Stark Bewölkt,9.4,12.96
+Freudenstadt,Bedeckt,16.2,14.4
+Fürstenzell,-,11.7,7.2
+Grosser Arber,Nebel,11.3,17.28
+Hof Hohensaas,Stark Bewölkt,18.2,12.6
+Hohenpeissenberg,Leichter Regen,10.3,23.76
+Kempten,-,14.1,14.04
+Konstanz,Bedeckt,18.9,5.04
+Lahr,Stark Bewölkt,21.6,6.12
+Mannheim,Bedeckt,20.0,9.36
+München-Flughafen,Leichter Regen,14.7,15.84
+Nürnberg-Flughafen,Niederschlag,14.9,13.32
+Oberstdorf,Sprühregen,14.6,3.96
+Oehringen,Regen,17.2,12.96
+Regensburg,Leichter Regen,16.7,7.2
+Rheinstetten,Stark Bewölkt,20.4,10.8
+Straubing,Sprühregen,16.6,16.2
+Stuttgart-Echterdingen,Bedeckt,18.4,16.92
+Weiden,Bedeckt,17.3,7.92
+Würzburg,Leichter Regen,15.4,14.4
+Zugspitze,Schneefall,-0.3,17.28
+Aachen,Bedeckt,21.0,12.96
+Bad Lippspringe,Sprühregen,16.1,7.2
+Düsseldorf-Flughafen,Stark Bewölkt,21.2,14.4
+Frankfurt/M.-Flughafen,Niederschlag,19.5,6.12
+Fritzlar,Leichter Regen,16.4,7.2
+Gießen Wettenberg,Regen,19.7,14.76
+Hahn-Flughafen,Trocken,18.3,9.36
+Kahler Asten,Leichter Regen,13.4,23.4
+Köln-Wahn,Bedeckt,20.0,11.52
+Münster/Osnabrück-Flughafen,Niederschlag,19.4,12.96
+Nürburg-Barweiler,Stark Bewölkt,16.7,7.92
+Offenbach/Wetterpark,Bedeckt,20.1,8.279999
+Saarbrücken/Ensheim,Niederschlag,20.1,16.92
+Trier-Petrisberg,Stark Bewölkt,21.1,21.24
+Wasserkuppe,Leichter Regen,11.2,20.16

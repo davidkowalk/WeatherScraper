@@ -5,7 +5,7 @@ from json import loads
 
 def main():
 
-    month = "may"
+    month = "june"
 
     file_names = get_files()[month]
 

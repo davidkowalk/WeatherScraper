@@ -5,7 +5,7 @@ from datetime import datetime
 import json
 
 index_file = "data/files.json"
-month = "june"
+month = "july"
 
 def main():
     data = get_data()

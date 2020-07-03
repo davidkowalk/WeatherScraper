@@ -11,7 +11,11 @@ def main():
     station_mapping = config["stations"]
 
     data = read_csv(path)
-    vis = generate_vis(station_mapping, data)
+
+    min_temp, max_temp = get_extremes(data)
+    print(min_temp, max_temp)
+
+    vis = generate_vis(station_mapping, data, min_temp, max_temp)
 
 
     with open("./maps/map.txt", "w", encoding="utf8") as file:
@@ -23,7 +27,7 @@ def get_config():
     return config
 
 
-def generate_vis(station_mapping, data): #Generate the configuartion-file for mapchart.net
+def generate_vis(station_mapping, data, min_temp, max_temp): #Generate the configuartion-file for mapchart.net
     vis = {
         "title":"Temperature in Germany",
         "hidden":[],
@@ -32,11 +36,6 @@ def generate_vis(station_mapping, data): #Generate the configuartion-file for ma
     }
 
     groups = {}
-
-    min_temp, max_temp = get_extremes(data)
-    print(min_temp, max_temp)
-
-
 
     for i in range(len(data["Station"])):
 

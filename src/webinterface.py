@@ -1,11 +1,13 @@
 from urllib.request import urlopen as ureq
 from bs4 import BeautifulSoup as soup
 
+
 def load(url):
     client = ureq(url)
     content = client.read()
     client.close()
     return content
+
 
 def get_data():
     url = "https://wetter.tagesschau.de/deutschland/wetterstationen/"

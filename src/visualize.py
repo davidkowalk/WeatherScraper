@@ -2,6 +2,7 @@ import json
 from pandas import read_csv
 import colorsys
 
+
 def main():
 
     global config
@@ -20,6 +21,7 @@ def main():
 
     with open("./maps/map.txt", "w", encoding="utf8") as file:
         json.dump(vis, file)
+
 
 def get_config():
     with open("./config.json",encoding='utf8') as file:

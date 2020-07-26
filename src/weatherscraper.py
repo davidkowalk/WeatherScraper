@@ -7,6 +7,7 @@ import json
 index_file = "data/files.json"
 month = "july"
 
+
 def main():
     data = get_data()
 
@@ -26,6 +27,7 @@ def main():
 
     update_index(month, fname)
 
+
 def update_index(month: str, name: str):
     index = read_index()
 
@@ -43,9 +45,11 @@ def read_index():
 
     return json.loads(txt)
 
+
 def write_index(index):
     with open(index_file, "w") as file:
         file.write(json.dumps(index, indent=4))
+
 
 if __name__ == '__main__':
     main()

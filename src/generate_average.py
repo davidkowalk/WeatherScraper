@@ -3,8 +3,8 @@ from pandas import read_csv
 from pandas import DataFrame
 from json import loads
 
-def main():
 
+def main():
     month = "june"
 
     file_names = get_files()[month]
@@ -13,11 +13,10 @@ def main():
 
     # Load all Files into Datastructure
     for name in file_names:
-        files.append(read_csv("./data/"+name))
+        files.append(read_csv("./data/" + name))
 
     # Initialize Average temperature file
-    avg_temp = DataFrame(columns = ["Station", "Temperatur"])
-
+    avg_temp = DataFrame(columns=["Station", "Temperatur"])
 
     # Load The first file into DataFrame
     first = files[0]
@@ -25,12 +24,10 @@ def main():
     for i, row in first.iterrows():
         avg_temp.loc[i] = [row["Station"], row["Temperatur"]]
 
-
-    #Add all succeeding files
+    # Add all succeeding files
     for file in files[1:]:
         for i, row in file.iterrows():
             avg_temp.at[i, "Temperatur"] += row["Temperatur"]
-
 
     # Divide all tempereatures by the number of summs to get average
     length = len(file_names)

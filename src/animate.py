@@ -2,6 +2,7 @@ import json
 from visualize import generate_vis
 from pandas import read_csv
 
+
 def main():
     sorted_index = load_index()["averages"]
     config = get_config()
@@ -11,7 +12,7 @@ def main():
     print("Reading data...")
 
     for path in sorted_index:
-        data_cube.append(read_csv("averages/"+path))
+        data_cube.append(read_csv("averages/" + path))
 
     extremes = get_extremes(data_cube, config)
 
@@ -22,13 +23,13 @@ def main():
     print("\nSaving to disk...")
     i = 0
     for frame in frames:
-        with open(f"./animation/frame_{i}.txt", "w", encoding = "utf8") as file:
+        with open(f"./animation/frame_{i}.txt", "w", encoding="utf8") as file:
             json.dump(frame, file)
 
         i += 1
 
-def generate_frames(extremes, data_cube, config):
 
+def generate_frames(extremes, data_cube, config):
     frames = []
 
     min_temp = extremes[0]
@@ -37,11 +38,10 @@ def generate_frames(extremes, data_cube, config):
     for sheet in data_cube:
         frames.append(generate_vis(config["stations"], sheet, min_temp, max_temp))
 
-
     return frames
 
-def get_extremes(data_cube, config):
 
+def get_extremes(data_cube, config):
     lowest = data_cube[0].at[0, "Temperatur"]
     highest = data_cube[0].at[0, "Temperatur"]
 
@@ -56,7 +56,7 @@ def get_extremes(data_cube, config):
             elif row["Temperatur"] > highest:
                 highest = row["Temperatur"]
 
-    return (lowest, highest)
+    return lowest, highest
 
 
 def load_index():
@@ -68,12 +68,10 @@ def load_index():
     return json.loads(txt)
 
 
-
 def get_config():
-    with open("./config.json",encoding='utf8') as file:
+    with open("./config.json", encoding='utf8') as file:
         config = json.load(file)
     return config
-
 
 
 if __name__ == '__main__':
